@@ -1,0 +1,150 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+div.gris {
+    background-color: lightgray;
+}
+
+.header-img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    background-color: saddlebrown;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.logo {
+    float: left;
+    margin-left: 20px;
+    padding:0px;
+    width: 85px;
+    height: 85px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 990px;
+    z-index: 100;
+}
+
+ul.nav {
+    background-color: black;
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li.menu a.menu{
+    display: block;
+    background-color: green;
+    color:white; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: white;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li.submenu a {
+    display: block;
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li ul li {
+    float: none;
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+.nav li ul li a:hover {
+    background-color: lightgray;
+}
+
+#Tiramisu:target, 
+#Tarta_de_chocolate:target,  
+#Tarta_de_manzana:target,  
+#Arroz_con_leche:target,  
+#Crema_catalana:target,  
+#Dulce_de_leche:target{
+    border: 3px solid red;
+}
+
+.recipe {
+    padding: 10px;
+    margin: 30px auto;
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.recipe img {
+    float: right;
+    border: 1px solid black;
+    width: 120px;
+}
+
+.recipe #Col:checked ~ p {
+    columns: 2 auto;
+    column-gap: 20px;
+}
+
+.recipe .english {
+    display: none;
+}
+
+.recipe #Lang:checked ~ .espanol {
+    display: none;
+}
+
+.recipe #Lang:checked ~ .english {
+    display: block;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px ;
+    background-color: black;
+    color: white;
+}
